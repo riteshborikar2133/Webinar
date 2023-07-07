@@ -228,7 +228,7 @@
     text-align: center;
     padding: 2rem 0rem;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     *{
         font-size: 12px;
     }
