@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Noto+Serif:wght@800&display=swap');
+
+
+:root{
+    --mblue:#4056A1;
+    --myellow:#f2bd5c;
+    --mwhite:#efe2ba;
+    --mred:#f13c20;
+    --mlblue:#c5cbe3;
+    --mwhite:#FAF9F6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.nav{
+    background-color: var(--mblue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #f54818;
+    margin: 0.9rem 3rem;
+    text-shadow: 4px 2px 0rem rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+.opt ul{
+    display: flex;
+    list-style: none;
+}
+.opt li{
+    margin: 0.9rem 2.5rem;
+}
+.opt a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1.04rem;
+    padding: .4rem;
+    overflow: hidden;
+}
+.opt a::after{
+    content: " ";
+    position: absolute;
+    border-radius: 30%;
+    height: 5%;
+    width: 0%;
+    background-color: var(--mlblue);
+    left: 0;
+    bottom: 0;
+    transition: linear 0.2s;
+}
+.opt a:hover::after{
+    width: 100%;
+}
+.opt a:hover{
+    color: var(--mlblue);
+}
+
+.fly{
+    /* border: 1px solid red; */
+    background-color: var(--mblue);
+    display: flex;
+    /* justify-content:space-evenly; */
+}
+.fleft{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    /* width: 50%; */
+    background-color: var(--mblue);
+}
+.fleft h1{
+    font-size: 2rem;
+    /* border:1px solid red; */
+    text-align: right;
+    color: var(--myellow);
+    font-family:'Noto Serif', serif;
+    /* text-shadow: 0.1rem 0.1rem black,-0.1rem -0.1rem black; */
+}
+.fleft h1 span {
+    color: white;
+    color: var(--mlblue);
+}
+.fright{
+    /* width: 50%; */
+    overflow: hidden;
+}
+.fright img{
+    height: 30rem;
+}
+
+.bnf{
+    background-color: var(--mwhite);
+}
+.bnf h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2.5rem 0 1rem 0;
+    color:var(--mblue);
+}
+.bnf hr{
+    width: 7rem;
+    margin: auto;
+}
+.bcard{
+    display: flex;
+    padding: 0.41rem 2rem;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+.bcard .bc1{
+    width: 300px;
+    /* border: 1px solid red; */
+    padding: 3rem;
+    text-align: center;
+}
+.bc1 .lg i{
+    font-size: 4rem;
+    color: #243263;
+    margin: 1rem 0;
+}
+.bc1 .txt span{
+    color: var(--mred);
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.obj{
+    color: white;
+    background-color: var(--mblue);
+
+}
+.obj hr{
+    width: 7rem;
+    color: white;
+    margin: auto;
+}
+.obj h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2.5rem 0 1rem 0;
+    color:white;
+}
+.obj .aim{
+    color: white;
+    padding: 0.41rem 2rem;
+    /* border: 1px solid rosybrown; */
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+}
+.aim span{
+    position: relative;
+    color: var(--myellow);
+    font-family: 'IBM Plex Serif', serif;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.aim span::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+    border-radius: 50%;
+    height: 0.51rem;
+    width: 0.51rem;
+    background-color: white;
+}
+
+.reg{
+    background-color:var(--mwhite);
+    padding-bottom: 2rem;
+}
+.reg h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2.5rem 0 2rem 0;
+    color:var(--mblue); 
+}
+.reg hr{
+    width: 9rem;
+    margin: auto;
+}
+.reg form{
+    text-align: center;
+    margin: 2rem;
+    background-color: #c5cbe3;
+    width: 30rem;
+    margin: auto;
+    padding: 1rem;
+}
+.field{
+    display: block;
+    margin: 2.3rem auto;
+    text-align: center;
+    font-family:'Noto Serif', serif;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid black;
+}
+.field:hover{
+    border: 1px solid green;
+    background-color: black;
+    color: white;   
+}
+.btn{
+    font-family:'Noto Serif', serif;
+    background-color: var(--mblue);
+    font-size: 1.2;
+    color: white;
+    padding: 0.4rem 2rem ;
+}
+.ft{
+    background-color: var(--mblue);
+    color:var(--mwhite);
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+@media screen and (max-width: 300px) {
+    *{
+        font-size: 12px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .opt{
+        display: none;
+    }
+    .opt ul{
+        flex-direction: column;
+    }
+    .opt ul li{ 
+        border: 1px solid red;
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .fly{
+        flex-direction: column;
+    }
+    .fleft h1{
+        text-align: center;
+    }
+    .reg form{
+        width: 15rem;
+    }
+}
