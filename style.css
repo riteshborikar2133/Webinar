@@ -142,6 +142,7 @@
 .obj{
     color: white;
     background-color: var(--mblue);
+    padding-bottom: 2rem;
 
 }
 .obj hr{
@@ -180,7 +181,6 @@
     width: 0.51rem;
     background-color: white;
 }
-
 .reg{
     background-color:var(--mwhite);
     padding-bottom: 2rem;
@@ -203,7 +203,7 @@
 .reg form{
     text-align: center;
     margin: 2rem;
-    background-color:rgb(94, 168, 189,0.2);
+    background-color:rgba(216, 214, 214, 0.41);
     width: 30rem;
     margin: auto;
     padding: 1rem;
@@ -239,6 +239,24 @@
     font-size: 5rem;
     text-align: center;
     padding: 1rem 0rem;
+}
+.notify{
+    display: none;
+    background-color: rgb(28, 137, 28);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+.notify h4{
+    font-size: 1.0rem;
+    font-family: 'Noto Serif', serif;
+}
+.notify p{
+    color: rgb(225, 224, 224);
 }
 @media screen and (max-width: 400px) {
     *{
